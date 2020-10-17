@@ -78,13 +78,15 @@
         private fun resetInputAmount() {
             //Metodo que resetea el numero introducido
             //Cuando se resetea el numero, la vista recibe el foco, el numero se cambia a  y se selecciona
+            //La vista TextView anterior al EditText tambien se colorea del mismo color rosa que la seleccion de texto u otros elementos de la actividad
             binding.mainAmountInput.requestFocus()
             binding.mainAmountInput.setText("0")
             binding.mainAmountInput.selectAll()
+            binding.lblAmount.setTextColor(resources.getColor(R.color.pink_200))
         }
 
         private fun selectAmount() {
-            //Se selecciona el numero que contiene
+            //Se selecciona el numero que contiene y se colorea la vista TextView asociada
             binding.mainAmountInput.selectAll()
         }
 
