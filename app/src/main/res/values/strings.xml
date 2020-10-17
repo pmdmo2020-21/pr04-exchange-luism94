@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Exchange</string>
+    <string name="currency_dollar">Dollar</string>
+    <string name="currency_euro">Euro</string>
+    <string name="currency_pound">Pound</string>
+    <string name="main_amount">Amount</string>
+    <string name="lbl_firstCurr_radioGroup">From currency</string>
+    <string name="lbl_secondCurr_radioGroup">To currency</string>
+    <string name="main_button_name">exchange</string>
+    <string name="currency_icon">Currency Icon</string>
+    <string name="valid_digits">0123456879.</string>
 </resources>

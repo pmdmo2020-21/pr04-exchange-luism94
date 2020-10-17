@@ -12,10 +12,14 @@ enum class Currency(
     EURO("€", R.drawable.ic_euro, 1.17),
     POUND("£", R.drawable.ic_pound, 1.31);
 
-    // TODO: Method to convert the currency to dollar.
-    // fun toDollar(amount: Double): Double
+    // Metodo que recibe el valor introducido de la moneda seleccionada y la convierte a Dolar
+     fun toDollar(amount: Double): Double {
+        return amount * this.asDollar
+     }
 
-    // TODO: Method to convert a dollar to the currency
-    // fun fromDollar(amount: Double): Double
+    // Metodo que recibe el valor introducido en Dolares y la convierte a Euro o Libra
+     fun fromDollar(amount: Double): Double {
+        return amount / this.asDollar
+     }
 
 }
